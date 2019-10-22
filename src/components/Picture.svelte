@@ -1,8 +1,9 @@
 <script>
 export let host;
 export let imgName;
-export let imgAlt;
+export let alt;
 export let c = "";
+export let style = "";
 
 </script>
 
@@ -28,8 +29,10 @@ export let c = "";
             " 
         sizes="800px">
         <img    src="https://res.cloudinary.com/{host}/image/upload/w_400,c_fit/f_webp/q_auto/v1571763923/ephemerasearch/{imgName}.jpg" 
-                alt="{imgAlt}" 
+                {alt} 
+                {style}
                 data-sizes="auto" 
                 class="lazyload w-full {c}" 
-                sizes="800px">
+                sizes="800px"
+                >
 </picture>
