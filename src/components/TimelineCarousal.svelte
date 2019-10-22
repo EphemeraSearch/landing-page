@@ -43,7 +43,7 @@ img {
   opacity: 0.5;
   z-index: 2;
   position: relative;
-  transition:  opacity 100ms 150ms, z-index 0s 150ms;
+  transition:  opacity 100ms 150ms, z-index 0s 150ms, box-shadow 120ms 0ms;
 }
 
 .parent > .highlight {
@@ -51,7 +51,7 @@ img {
   font-size: var(--s3);
   position: relative;
   z-index: 3;
-  transition: z-index 0s 150ms, opacity 350ms 150ms ;
+  transition: z-index 0s 150ms, opacity 350ms 150ms, box-shadow 350ms 150ms ;
 }
 
 
@@ -61,6 +61,7 @@ img {
     animation-duration: 350ms;
     animation-delay: 150ms;
     animation-fill-mode: both;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 

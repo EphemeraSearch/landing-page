@@ -143,6 +143,10 @@ p {
   max-width: 60ch
 }
 
+.w-60ch {
+  max-width: 60ch !important;
+}
+
 
 /* Box Debugger
 * {

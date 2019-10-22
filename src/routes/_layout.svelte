@@ -25,6 +25,6 @@
   </defs>
   <rect opacity=".8" filter="url(#filter_texture)" width="100%" height="100%"></rect>
 </svg>
-<main class="stack-xl px-6 mx-auto">
+<main class="stack-xl px-6 mx-auto mb-16">
 	<slot></slot>
 </main>

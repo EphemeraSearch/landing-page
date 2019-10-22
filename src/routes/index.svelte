@@ -46,7 +46,7 @@ import Timeline from '../components/TimelineCarousal.svelte'
 	}
 
 	.inside-shadow {
-		box-shadow: inset 0 0 10px #000000
+		box-shadow: inset 0 10px 20px rgba(0,0,0,0.19),inset 0 6px 6px rgba(0,0,0,0.23);
 	}
 
 @media (max-width: 600px) {
@@ -68,6 +68,8 @@ import Timeline from '../components/TimelineCarousal.svelte'
 		border-bottom-left-radius: 1rem;
 	}
 }
+
+
 </style>
 
 
@@ -110,4 +112,20 @@ import Timeline from '../components/TimelineCarousal.svelte'
 			<p>When it comes to decyphering old and faded handwriting. Humans are way better than machines. Every bit of help makes more discoveries possible.</p>
 	</section>
 	</div>
+</section>
+
+<section class="w-60ch mx-auto">
+	<h2 class="text-center">Sign up for our early Beta</h2>
+	<form class="stack-small flex flex-col" name="contact" method="post" netlify="true" netlify-honeypot="bot-field">
+		<input type="hidden" name="form-name" value="contact">
+		<div class="flex flex-col">
+		<label for="name" class="flex justify-between"> Name: <span class="text-red-600">* required</span></label>
+		<input class="pl-4 py-2" type="text" name="name" placeholder="Susan Smith">
+		</div>
+		<div class="flex flex-col">
+		<label for="email" class="flex justify-between"> Email: <span class="text-red-600">* required</span></label>
+		<input class="pl-4 py-2" type="email" name="email" placeholder="historian@gmail.com">
+		</div>
+		<button class="border-none w-1/2 h-12 hover:underline cursor-pointer hover:bg-gray-900 rounded-lg self-center bg-black text-white" type="submit">Sign me up!</button>
+	</form>
 </section>
