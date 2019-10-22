@@ -32,6 +32,7 @@ img, .wrapper {
     width: calc(6rem + 10vw);
     animation-name: shrink;
     animation-duration: 150ms;
+    margin-right: 0.5rem;
 }
 
 

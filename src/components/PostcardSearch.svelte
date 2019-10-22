@@ -79,8 +79,9 @@ onMount(async () => {
  */
 
  .wrapper {
-     width: calc(300px + 25vw);
+     width: calc(200px + 25vw);
      margin-left: calc(-2rem - 150px);
+     
  }
 
  .wrapper img {
@@ -148,7 +149,7 @@ onMount(async () => {
 
 	<div class="search__details flex items-center">
     <div class="wrapper mr-6">
-    <Picture host="groundedsage" imgName="main-postcard" imgAlt="A postcard with handwritten details"/>
+    <Picture host="groundedsage" imgName="main-postcard" imgAlt="A postcard with handwritten details" style="box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);" />
     </div>
 		<!-- <img src="main-postcard.jpg" alt="Old Postcard" class="mr-6">-->
 		<ul class="stack-small">
