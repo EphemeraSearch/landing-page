@@ -92,7 +92,7 @@ End CSS Reset
 /* System Fonts */
 body {
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  }
+}
 
 /* Vertical Spacing */
 .stack-small > * + * {
@@ -109,6 +109,7 @@ body {
 
 
 :root {
+  --background-color: #f3f3f3 ;
   font-size: calc(1rem + 0.5vw);
 
   /* Creates modular scales */

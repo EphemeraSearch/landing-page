@@ -78,8 +78,8 @@ img {
 
 
 <div class="flex flex-col items-center stack-small">
-	<h2 > Scroll Through the Past</h2>
-	<p>Peer into history visually. See old photography, artwork, fashions and humour.</p>
+	<h2> Scroll Through the Past</h2>
+	<p class="text-center">Peer into history visually. See old photography, artwork, and humour.</p>
 	
     
     <ul class="parent">

@@ -62,7 +62,8 @@ onMount(async () => {
 .search__bar {
 	border-radius: 2rem;
 	width: 90vw;
-	max-width: 60ch;
+    max-width: 60ch;
+    background-color: var(--background-color)
 
  }
 
@@ -70,7 +71,9 @@ onMount(async () => {
  .search__details img {
 	 width: calc(300px + 25vw);
 	 height: auto;
-	 margin-left: calc(-2rem - 150px);
+     margin-left: calc(-2rem - 150px);
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
  }
 
 .typewriter-cursor {

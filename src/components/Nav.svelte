@@ -9,6 +9,7 @@
 		justify-content: center;
 		align-items: center;
 		border-bottom: 1px solid black;
+		background-color: var(--background-color);
 		/* Not rendering for some reason
 		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */

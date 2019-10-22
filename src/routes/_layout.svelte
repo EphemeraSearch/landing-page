@@ -7,79 +7,24 @@
 <style>
 	main {
 		position: relative;
-		max-width: 56em;
-		background-color: white;
-		box-sizing: border-box;
+		max-width: 56rem;
 	}
-
-	h1 { 
-		position: absolute;
-		z-index: 5;
-		color: white;
-		font-weight: 900;
-		font-size: 3em;
-		padding: 1.5rem;
-		line-height: 1.2em;
-	}
-
-	.container-svelte {
-		position: relative;
-		width: 100%;
-		max-height: 50vh;
-		overflow: hidden;
-		display: flex;
-	}
-
-	img { 
-		width: 100%;
-		object-fit: cover;
-		filter: blur(1px);
-	}
-
-	.img-gradient{
-		content: "";
-		background-image: linear-gradient(to top, black, rgba(0,0,0,0.4));
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 100%;
-	}
-	.container h1 {
-		align-self: center;
-		letter-spacing: 0.02em;
-	}
-
-@media (max-width: 600px) {
-	.sm\:heading {
-		font-size:  calc(var(--s2) + 0.5vw);
-	}
-}
-
-
-@media (min-width: 600px) {
-	img { 
-		filter: blur(3px);
-	}
-}
-
 
 </style>
 
 <Nav {segment}/>
 
-<header>
-<div class="bg-img"></div>
-</header>
-
-
-<div class="container-svelte">
-  <img src="banner-postcard.jpg" alt="Old Postcard">
-  <div class="img-gradient"></div>
-  <h1 class="sm:heading">Explore the connections and history of the worlds postcards</h1>
-</div>
-
-
-
-<main class="stack-xl mt-12 px-6">
+<svg class="fixed w-screen h-screen -mt-12" style="z-index: -1; background-color: hsl(42, 33%, 84%)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <filter id="filter_texture">
+      <feTurbulence type="fractalNoise" baseFrequency="0.007" stitchTiles="stitch" numOctaves="5" result="noise"></feTurbulence>
+      <feDiffuseLighting in="noise" lighting-color="hsl(42, 72%, 94%)" surfaceScale="5">
+        <feDistantLight id="distLight" azimuth="35" elevation="60"></feDistantLight>
+      </feDiffuseLighting>
+    </filter>
+  </defs>
+  <rect opacity=".8" filter="url(#filter_texture)" width="100%" height="100%"></rect>
+</svg>
+<main class="stack-xl px-6 mx-auto">
 	<slot></slot>
 </main>
