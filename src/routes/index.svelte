@@ -83,7 +83,31 @@ import Picture from '../components/Picture.svelte';
 
 <header class="container-svelte -mx-6">
 	<div class="wrapper">
-		<Picture host="groundedsage" imgName="banner-postcard" imgAlt="Presentational image" />
+	<picture>
+    <source type="image/webp" 
+        srcset="https://res.cloudinary.com/groundedsage/image/upload/w_200,c_fit/f_webp/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 200w, 
+                https://res.cloudinary.com/groundedsage/image/upload/w_400,c_fit/f_webp/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 400w,
+                https://res.cloudinary.com/groundedsage/image/upload/w_800,c_fit/f_webp/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 800w,
+                https://res.cloudinary.com/groundedsage/image/upload/w_1200,c_fit/f_webp/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 1200w, 
+            https://res.cloudinary.com/groundedsage/image/upload/w_1600,c_fit/f_webp/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 1600w,
+            https://res.cloudinary.com/groundedsage/image/upload/w_2400,c_fit/f_webp/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 2400w"		 
+
+        sizes="800px">
+    <source type="image/jpg"  
+        srcset="https://res.cloudinary.com/groundedsage/image/upload/w_200,c_fit/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 200w, 
+                https://res.cloudinary.com/groundedsage/image/upload/w_400,c_fit/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 400w,
+                https://res.cloudinary.com/groundedsage/image/upload/w_800,c_fit/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 800w,
+                https://res.cloudinary.com/groundedsage/image/upload/w_1200,c_fit/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 1200w, 
+            https://res.cloudinary.com/groundedsage/image/upload/w_1600,c_fit/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 1600w,
+            https://res.cloudinary.com/groundedsage/image/upload/w_2400,c_fit/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 2400w
+            " 
+        sizes="800px">
+        <img    src="https://res.cloudinary.com/groundedsage/image/upload/w_400,c_fit/f_webp/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg" 
+                alt="Presentational image" 
+                sizes="auto" 
+                class="w-full"
+                >
+</picture>
 	</div>
 	<!-- <img src="banner-postcard.jpg" alt="Old Postcard"> -->
 	<div class="img-gradient"></div>
