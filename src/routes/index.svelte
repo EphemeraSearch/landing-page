@@ -125,14 +125,18 @@ import Picture from '../components/Picture.svelte';
 	<h2 class="text-center">Sign up for our early Beta</h2>
 	<form class="stack-small flex flex-col" name="contact" method="post" netlify="true" netlify-honeypot="bot-field">
 		<input type="hidden" name="form-name" value="contact">
-		<div class="flex flex-col">
-		<label for="name" class="flex justify-between"> Name: <span class="text-red-600">* required</span></label>
-		<input class="pl-4 py-2" type="text" name="name" placeholder="Susan Smith">
-		</div>
-		<div class="flex flex-col">
-		<label for="email" class="flex justify-between"> Email: <span class="text-red-600">* required</span></label>
-		<input class="pl-4 py-2" type="email" name="email" placeholder="susan@historian.com">
-		</div>
+		<label for="name" >
+			<div class="flex justify-between">Name: <span class="text-red-800">* required</span></div>
+			<input class="pl-4 py-2 w-full" type="text" name="name" placeholder="Susan Smith">
+		</label>
+		
+	
+		<label for="email" >
+			<div class="flex justify-between">Email: <span class="text-red-800">* required</span></div>
+			<input class="pl-4 py-2 w-full" type="email" name="email" placeholder="susan@historian.com">
+		</label>
+		
+
 		<button class="border-none w-1/2 h-12  hover:underline cursor-pointer hover:bg-gray-900 self-center bg-black text-white" type="submit">Sign me up!</button>
 	</form>
 </section>
