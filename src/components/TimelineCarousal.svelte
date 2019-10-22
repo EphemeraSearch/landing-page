@@ -29,10 +29,11 @@ function changeHighlight(el) {
 }
 
 img, .wrapper {
-    width: calc(6rem + 10vw);
+    width: calc(5rem + 10vw);
     animation-name: shrink;
     animation-duration: 150ms;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
+    
 }
 
 
@@ -81,8 +82,8 @@ img, .wrapper {
 
 
 <div class="flex flex-col items-center stack-small">
-	<h2> Scroll Through the Past</h2>
-	<p class="text-center">Peer into history visually. See old photography, artwork, and humour.</p>
+	<h2 class="text-center"> Scroll Through the Past</h2>
+	<p class="sm:text-center">Peer into history visually. See old photography, artwork, and humour.</p>
 	
     
     <ul class="parent">

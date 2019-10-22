@@ -121,8 +121,8 @@ import Picture from '../components/Picture.svelte';
 <Timeline/>
 
 <section class="flex flex-col items-center stack-small">
-<h2> Track cards across the globe</h2>
-<p class="text-center">Follow postcards sent to a specific address and discover interesting relationships. Across time and space.</p>
+<h2 class="text-center"> Track cards across the globe</h2>
+<p class="sm:text-center">Follow postcards sent to a specific address and discover interesting relationships. Across time and space.</p>
  <div class="w-56 h-56 rounded-full overflow-hidden relative">
  <Picture host="groundedsage" imgName="map" imgAlt="World map with pins and string between the pins connecting places" c="object-cover w-56 h-56"/>
  <!--<img  src="map.jpg" alt="" class="object-cover w-56 h-56"> -->
