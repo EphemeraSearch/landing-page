@@ -2,6 +2,7 @@
 import { fade } from 'svelte/transition';
 import { onMount } from 'svelte';
 import SearchIcon from './SearchIcon.svelte';
+import Picture from './Picture.svelte';
 
 let visible = false;
 let js = false;
@@ -67,12 +68,23 @@ onMount(async () => {
 
  }
 
-
+/*
  .search__details img {
 	 width: calc(300px + 25vw);
 	 height: auto;
      margin-left: calc(-2rem - 150px);
 	 box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+ }
+
+ */
+
+ .wrapper {
+     width: calc(300px + 25vw);
+     margin-left: calc(-2rem - 150px);
+ }
+
+ .wrapper img {
+     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
  }
 
 .typewriter-cursor {
@@ -135,7 +147,10 @@ onMount(async () => {
 
 
 	<div class="search__details flex items-center">
-		<img src="main-postcard.jpg" alt="Old Postcard" class="mr-6">
+    <div class="wrapper mr-6">
+    <Picture host="groundedsage" imgName="main-postcard" imgAlt="A postcard with handwritten details"/>
+    </div>
+		<!-- <img src="main-postcard.jpg" alt="Old Postcard" class="mr-6">-->
 		<ul class="stack-small">
 			<li class="flex">
 				<span class="w-20">Sender:</span>

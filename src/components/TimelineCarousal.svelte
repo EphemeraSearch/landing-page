@@ -1,7 +1,9 @@
 <script>
-
+import Picture from './Picture.svelte';
 let isHighlighted = 2;
 let timeout;
+
+
 
 function changeHighlight(el) {
   clearTimeout(timeout);
@@ -26,9 +28,8 @@ function changeHighlight(el) {
     margin-top: 3rem;
 }
 
-img {
+img, .wrapper {
     width: calc(6rem + 10vw);
-   
     animation-name: shrink;
     animation-duration: 150ms;
 }
@@ -55,8 +56,8 @@ img {
 }
 
 
-.parent .highlight img {
-  
+.parent .highlight img,
+.parent .highlight .wrapper {
     animation-name: grow;
     animation-duration: 350ms;
     animation-delay: 150ms;
@@ -87,17 +88,28 @@ img {
       <li class="flex items-center justify-between {isHighlighted === 1 ? 'highlight' : ''}"
           on:click={() => changeHighlight(1)}>
         <p class="font-bold date">1940</p>
-        <img src="landscape-photo.jpg" alt="Old Postcard" >
+        <div class="wrapper">
+          <Picture host="groundedsage" imgName="landscape" imgAlt="An old black and white landscape photo"/>
+        </div>
+          
+        
+      <!--<img src="landscape-photo.jpg" alt="Old Postcard" >-->
       </li>
       <li class="flex items-center justify-between {isHighlighted === 2 ? 'highlight' : ''}"
            on:click={() => changeHighlight(2)}>
         <p  class="font-bold date">1950</p>
-        <img src="thanksgiving.jpg" alt="Old Postcard" >
+        <div class="wrapper">
+          <Picture host="groundedsage" imgName="thanksgiving" imgAlt="Thanksgiving art on a postcard"/>
+        </div>
+        <!-- <img src="thanksgiving.jpg" alt="Old Postcard" >-->
       </li>
       <li class="flex items-center justify-between {isHighlighted === 3 ? 'highlight' : ''}"
            on:click={() => changeHighlight(3)}>
         <p  class="font-bold date">1960</p>
-        <img src="motorcycle.jpg" alt="Old Postcard">
+        <div class="wrapper">
+          <Picture host="groundedsage" imgName="motorcycle" imgAlt="Black and white photo of an old motorcycle"/>
+        </div>
+        <!-- <img src="motorcycle.jpg" alt="Old Postcard"> -->
       </li>
 	</ul>
 
