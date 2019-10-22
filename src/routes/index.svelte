@@ -124,8 +124,8 @@ import Timeline from '../components/TimelineCarousal.svelte'
 		</div>
 		<div class="flex flex-col">
 		<label for="email" class="flex justify-between"> Email: <span class="text-red-600">* required</span></label>
-		<input class="pl-4 py-2" type="email" name="email" placeholder="historian@gmail.com">
+		<input class="pl-4 py-2" type="email" name="email" placeholder="susan@historian.com">
 		</div>
-		<button class="border-none w-1/2 h-12 hover:underline cursor-pointer hover:bg-gray-900 rounded-lg self-center bg-black text-white" type="submit">Sign me up!</button>
+		<button class="border-none w-1/2 h-12  hover:underline cursor-pointer hover:bg-gray-900 self-center bg-black text-white" type="submit">Sign me up!</button>
 	</form>
 </section>
