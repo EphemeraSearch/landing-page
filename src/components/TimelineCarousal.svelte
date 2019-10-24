@@ -90,7 +90,7 @@ img, .wrapper {
           on:click={() => changeHighlight(1)}>
         <p class="font-bold date">1940</p>
         <div class="wrapper">
-          <Picture host="groundedsage" imgName="landscape" imgAlt="An old black and white landscape photo"/>
+          <Picture host="groundedsage" imgName="landscape" alt="An old black and white landscape photo"/>
         </div>
           
         
@@ -100,7 +100,7 @@ img, .wrapper {
            on:click={() => changeHighlight(2)}>
         <p  class="font-bold date">1950</p>
         <div class="wrapper">
-          <Picture host="groundedsage" imgName="thanksgiving" imgAlt="Thanksgiving art on a postcard"/>
+          <Picture host="groundedsage" imgName="thanksgiving" alt="Thanksgiving art on a postcard"/>
         </div>
         <!-- <img src="thanksgiving.jpg" alt="Old Postcard" >-->
       </li>
@@ -108,7 +108,7 @@ img, .wrapper {
            on:click={() => changeHighlight(3)}>
         <p  class="font-bold date">1960</p>
         <div class="wrapper">
-          <Picture host="groundedsage" imgName="motorcycle" imgAlt="Black and white photo of an old motorcycle"/>
+          <Picture host="groundedsage" imgName="motorcycle" alt="Black and white photo of an old motorcycle"/>
         </div>
         <!-- <img src="motorcycle.jpg" alt="Old Postcard"> -->
       </li>

@@ -146,7 +146,7 @@ onMount(async () => {
 
 	<div class="search__details flex items-center">
     <div class="wrapper mr-6">
-    <Picture host="groundedsage" imgName="main-postcard" imgAlt="A postcard with handwritten details" />
+    <Picture host="groundedsage" imgName="main-postcard" alt="A postcard with handwritten details" />
     </div>
 		<!-- <img src="main-postcard.jpg" alt="Old Postcard" class="mr-6">-->
 		<ul class="stack-small">
