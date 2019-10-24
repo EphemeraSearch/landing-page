@@ -1,10 +1,7 @@
 <script>
-import 'lazysizes';
-
 import PostcardSearch from '../components/PostcardSearch.svelte';
 import Timeline from '../components/TimelineCarousal.svelte';
 import Picture from '../components/Picture.svelte';
-
 
 </script>
 
