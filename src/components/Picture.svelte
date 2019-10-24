@@ -7,6 +7,14 @@ export let style = "";
 
 </script>
 
+<style>
+
+
+
+
+
+</style>
+
 <picture>
     <source type="image/webp" 
         srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="		 

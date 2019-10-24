@@ -84,9 +84,6 @@ onMount(async () => {
      
  }
 
- .wrapper img {
-     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
- }
 
 .typewriter-cursor {
     border-right-width: 2px;
@@ -149,7 +146,7 @@ onMount(async () => {
 
 	<div class="search__details flex items-center">
     <div class="wrapper mr-6">
-    <Picture host="groundedsage" imgName="main-postcard" imgAlt="A postcard with handwritten details" style="box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);" />
+    <Picture host="groundedsage" imgName="main-postcard" imgAlt="A postcard with handwritten details" />
     </div>
 		<!-- <img src="main-postcard.jpg" alt="Old Postcard" class="mr-6">-->
 		<ul class="stack-small">

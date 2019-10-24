@@ -147,6 +147,24 @@ p {
   max-width: 60ch !important;
 }
 
+img.lazyload,
+img.lazyloading {
+  opacity: 0;
+}
+
+img.lazyloaded {
+  opacity: 1;
+  transition: opacity 400ms;
+}
+
+
+.highlight img.lazyloaded,
+.wrapper img.lazyloaded {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: opacity 400ms, box-shadow 400ms;
+  opacity: 1;
+}
+
 
 /* Box Debugger
 * {
