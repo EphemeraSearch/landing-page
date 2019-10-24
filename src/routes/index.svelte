@@ -121,7 +121,7 @@ import Picture from '../components/Picture.svelte';
 <h2 class="text-center"> Track cards across the globe</h2>
 <p class="sm:text-center">Follow postcards sent to a specific address and discover interesting relationships. Across time and space.</p>
  <div class="w-56 h-56 rounded-full overflow-hidden relative">
- <Picture host="groundedsage" imgName="map" imgAlt="World map with pins and string between the pins connecting places" c="object-cover w-56 h-56"/>
+ <Picture host="groundedsage" imgName="map" alt="World map with pins and string between the pins connecting places" c="object-cover w-56 h-56"/>
  <!--<img  src="map.jpg" alt="" class="object-cover w-56 h-56"> -->
  <div class="w-full h-full absolute top-0 w-56 h-56 rounded-full inside-shadow"></div>
  </div>
