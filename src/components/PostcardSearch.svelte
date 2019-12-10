@@ -104,8 +104,9 @@ onMount(async () => {
 
 <div class="flex flex-col items-center stack-small">
 
-    <h2 class="text-center"> Details You Can Search</h2>
+    <h2 class="text-center">Find your ancestors</h2>
 
+    Here's a preview:
     <div class="search__bar p-4 border border-solid border-gray-600 flex h-12 items-center">
         <SearchIcon/>
 

@@ -6,67 +6,70 @@ import Picture from '../components/Picture.svelte';
 </script>
 
 <style>
-	h1 {
-		position: absolute;
-		z-index: 5;
-		color: white;
-		font-weight: 900;
-		font-size: 3em;
-		padding: 1.5rem;
-		line-height: 1.2em;
-	}
+    h1 {
+        /*position: absolute;
+        */
+        z-index: 5;
+        color: white;
+        font-weight: 900;
+        font-size: 3em;
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        padding: 1.5rem;
+        line-height: 1.2em;
+    }
 
 
-	header {
-		width: calc(100% + 3rem);
-		position: relative;
-		max-height: 50vh;
-		overflow: hidden;
-		display: flex;
-	}
+    header {
+        width: calc(100% + 3rem);
+        position: relative;
+        max-height: 50vh;
+        overflow: hidden;
+        display: flex;
+    }
 
-	header img,
-	.wrapper {
-		width: 100%;
-		filter: blur(1px);
-	}
+    header img,
+    .wrapper {
+        width: 100%;
+        filter: blur(1px);
+    }
 
-	header .img-gradient{
-		content: "";
-		background-image: linear-gradient(to top, black, rgba(0,0,0,0.4));
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 100%;
-	}
-	.container h1 {
-		align-self: center;
-		letter-spacing: 0.02em;
-	}
+    header .img-gradient{
+        content: "";
+        background-image: linear-gradient(to top, black, rgba(0,0,0,0.4));
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .container h1 {
+        align-self: center;
+        letter-spacing: 0.02em;
+    }
 
-	.inside-shadow {
-		box-shadow: inset 0 10px 20px rgba(0,0,0,0.19),inset 0 6px 6px rgba(0,0,0,0.23);
-	}
+    .inside-shadow {
+        box-shadow: inset 0 10px 20px rgba(0,0,0,0.19),inset 0 6px 6px rgba(0,0,0,0.23);
+    }
 
 @media (max-width: 600px) {
-	.sm\:heading {
-		font-size:  calc(var(--s2) + 0.5vw);
-	}
+    .sm\:heading {
+        font-size:  calc(var(--s2) + 0.5vw);
+    }
 }
 
 
 @media (min-width: 600px) {
-	header img,
-	.wrapper {
-		filter: blur(3px);
-	}
+    header img,
+    .wrapper {
+        filter: blur(3px);
+    }
 }
 
 @media (min-width: 78rem) {
-	header {
-		border-bottom-right-radius: 1rem;
-		border-bottom-left-radius: 1rem;
-	}
+    header {
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
 }
 
 
@@ -74,13 +77,13 @@ import Picture from '../components/Picture.svelte';
 
 
 <svelte:head>
-	<title>EphemeraSearch</title>
+    <title>EphemeraSearch</title>
 </svelte:head>
 
 
 <header class="container-svelte -mx-6">
-	<div class="wrapper">
-	<picture>
+    <div class="wrapper">
+    <picture>
     <source type="image/webp"
         srcset="https://res.cloudinary.com/EphemeraSearch/image/upload/w_200,c_fit/f_webp/q_auto/v1575995947/landing-page/banner-postcard.jpg 200w,
                 https://res.cloudinary.com/EphemeraSearch/image/upload/w_400,c_fit/f_webp/q_auto/v1575995947/landing-page/banner-postcard.jpg 400w,
@@ -105,10 +108,10 @@ import Picture from '../components/Picture.svelte';
                 class="w-full"
                 >
 </picture>
-	</div>
-	<!-- <img src="banner-postcard.jpg" alt="Old Postcard"> -->
-	<div class="img-gradient"></div>
-	<h1 class="sm:heading">Explore the world's postcards</h1>
+    </div>
+    <!-- <img src="banner-postcard.jpg" alt="Old Postcard"> -->
+    <div class="img-gradient"></div>
+    <h1 class="sm:heading">Explore the world's postcards</h1>
 </header>
 
 
@@ -129,34 +132,34 @@ import Picture from '../components/Picture.svelte';
 </section>
 
 <section class="stack-small flex flex-col items-center">
-	<h2> Contribute to the Discovery</h2>
-	<div class="mx-auto stack-small">
-	<section >
-			<h3>Unbox Your Collection</h3>
-			<p>Share your collection and see what unique discoveries you find.</p>
-	</section>
+    <h2> Contribute to the Discovery</h2>
+    <div class="mx-auto stack-small">
+    <section >
+            <h3>Unbox Your Collection</h3>
+            <p>Upload scans of your postcard collection and see what unique discoveries you find.</p>
+    </section>
 
-	<section>
-			<h3>Become a contributor</h3>
-			<p>When it comes to decyphering old and faded handwriting, humans are better than machines. Every bit of help makes more discoveries possible.</p>
-	</section>
-	</div>
+    <section>
+            <h3>Become a contributor</h3>
+            <p>When it comes to decyphering old and faded handwriting, humans are better than machines. Every bit of help makes more discoveries possible.</p>
+    </section>
+    </div>
 </section>
 
 <section class="w-60ch mx-auto">
-	<h2 class="text-center">Get access to our early beta</h2>
-	<form class="stack-small flex flex-col" name="contact" method="post" netlify="true" netlify-honeypot="bot-field">
-		<input type="hidden" name="form-name" value="contact">
-		<label for="name" >
-			<div class="flex justify-between">Name: <span class="text-red-800">* required</span></div>
-			<input class="pl-4 py-2 w-full" type="text" name="name" placeholder="Susan Smith">
-		</label>
+    <h2 class="text-center">Get access to our early beta</h2>
+    <form class="stack-small flex flex-col" name="contact" method="post" netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <label for="name" >
+            <div class="flex justify-between">Name: <span class="text-red-800">* required</span></div>
+            <input class="pl-4 py-2 w-full" type="text" name="name" placeholder="Susan Smith">
+        </label>
 
-		<label for="email" >
-			<div class="flex justify-between">Email: <span class="text-red-800">* required</span></div>
-			<input class="pl-4 py-2 w-full" type="email" name="email" placeholder="susan@historian.com">
-		</label>
+        <label for="email" >
+            <div class="flex justify-between">Email: <span class="text-red-800">* required</span></div>
+            <input class="pl-4 py-2 w-full" type="email" name="email" placeholder="susan@historian.com">
+        </label>
 
-		<button class="border-none w-1/2 h-12  hover:underline cursor-pointer hover:bg-gray-900 self-center bg-black text-white" type="submit">Sign up</button>
-	</form>
+        <button class="border-none w-1/2 h-12  hover:underline cursor-pointer hover:bg-gray-900 self-center bg-black text-white" type="submit">Sign up</button>
+    </form>
 </section>
