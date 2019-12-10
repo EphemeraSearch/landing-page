@@ -6,7 +6,7 @@ import Picture from '../components/Picture.svelte';
 </script>
 
 <style>
-	h1 { 
+	h1 {
 		position: absolute;
 		z-index: 5;
 		color: white;
@@ -26,7 +26,7 @@ import Picture from '../components/Picture.svelte';
 	}
 
 	header img,
-	.wrapper { 
+	.wrapper {
 		width: 100%;
 		filter: blur(1px);
 	}
@@ -57,7 +57,7 @@ import Picture from '../components/Picture.svelte';
 
 @media (min-width: 600px) {
 	header img,
-	.wrapper { 
+	.wrapper {
 		filter: blur(3px);
 	}
 }
@@ -81,34 +81,34 @@ import Picture from '../components/Picture.svelte';
 <header class="container-svelte -mx-6">
 	<div class="wrapper">
 	<picture>
-    <source type="image/webp" 
-        srcset="https://res.cloudinary.com/groundedsage/image/upload/w_200,c_fit/f_webp/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 200w, 
-                https://res.cloudinary.com/groundedsage/image/upload/w_400,c_fit/f_webp/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 400w,
-                https://res.cloudinary.com/groundedsage/image/upload/w_800,c_fit/f_webp/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 800w,
-                https://res.cloudinary.com/groundedsage/image/upload/w_1200,c_fit/f_webp/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 1200w, 
-            https://res.cloudinary.com/groundedsage/image/upload/w_1600,c_fit/f_webp/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 1600w,
-            https://res.cloudinary.com/groundedsage/image/upload/w_2400,c_fit/f_webp/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 2400w"		 
+    <source type="image/webp"
+        srcset="https://res.cloudinary.com/EphemeraSearch/image/upload/w_200,c_fit/f_webp/q_auto/v1575995947/landing-page/banner-postcard.jpg 200w,
+                https://res.cloudinary.com/EphemeraSearch/image/upload/w_400,c_fit/f_webp/q_auto/v1575995947/landing-page/banner-postcard.jpg 400w,
+                https://res.cloudinary.com/EphemeraSearch/image/upload/w_800,c_fit/f_webp/q_auto/v1575995947/landing-page/banner-postcard.jpg 800w,
+                https://res.cloudinary.com/EphemeraSearch/image/upload/w_1200,c_fit/f_webp/q_auto/v1575995947/landing-page/banner-postcard.jpg 1200w,
+            https://res.cloudinary.com/EphemeraSearch/image/upload/w_1600,c_fit/f_webp/q_auto/v1575995947/landing-page/banner-postcard.jpg 1600w,
+            https://res.cloudinary.com/EphemeraSearch/image/upload/w_2400,c_fit/f_webp/q_auto/v1575995947/landing-page/banner-postcard.jpg 2400w"
 
         sizes="800px">
-    <source type="image/jpg"  
-        srcset="https://res.cloudinary.com/groundedsage/image/upload/w_200,c_fit/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 200w, 
-                https://res.cloudinary.com/groundedsage/image/upload/w_400,c_fit/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 400w,
-                https://res.cloudinary.com/groundedsage/image/upload/w_800,c_fit/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 800w,
-                https://res.cloudinary.com/groundedsage/image/upload/w_1200,c_fit/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 1200w, 
-            https://res.cloudinary.com/groundedsage/image/upload/w_1600,c_fit/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 1600w,
-            https://res.cloudinary.com/groundedsage/image/upload/w_2400,c_fit/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg 2400w
-            " 
+    <source type="image/jpg"
+        srcset="https://res.cloudinary.com/EphemeraSearch/image/upload/w_200,c_fit/q_auto/v1575995947/landing-page/banner-postcard.jpg 200w,
+                https://res.cloudinary.com/EphemeraSearch/image/upload/w_400,c_fit/q_auto/v1575995947/landing-page/banner-postcard.jpg 400w,
+                https://res.cloudinary.com/EphemeraSearch/image/upload/w_800,c_fit/q_auto/v1575995947/landing-page/banner-postcard.jpg 800w,
+                https://res.cloudinary.com/EphemeraSearch/image/upload/w_1200,c_fit/q_auto/v1575995947/landing-page/banner-postcard.jpg 1200w,
+            https://res.cloudinary.com/EphemeraSearch/image/upload/w_1600,c_fit/q_auto/v1575995947/landing-page/banner-postcard.jpg 1600w,
+            https://res.cloudinary.com/EphemeraSearch/image/upload/w_2400,c_fit/q_auto/v1575995947/landing-page/banner-postcard.jpg 2400w
+            "
         sizes="800px">
-        <img    src="https://res.cloudinary.com/groundedsage/image/upload/w_400,c_fit/f_webp/q_auto/v1571763923/ephemerasearch/banner-postcard.jpg" 
-                alt="Presentational image" 
-                sizes="auto" 
+        <img    src="https://res.cloudinary.com/EphemeraSearch/image/upload/w_400,c_fit/f_webp/q_auto/v1575995947/landing-page/banner-postcard.jpg"
+                alt="Presentational image"
+                sizes="auto"
                 class="w-full"
                 >
 </picture>
 	</div>
 	<!-- <img src="banner-postcard.jpg" alt="Old Postcard"> -->
 	<div class="img-gradient"></div>
-	<h1 class="sm:heading">Explore the connections and history of the worlds postcards</h1>
+	<h1 class="sm:heading">Explore the world's postcards</h1>
 </header>
 
 
@@ -118,13 +118,14 @@ import Picture from '../components/Picture.svelte';
 <Timeline/>
 
 <section class="flex flex-col items-center stack-small">
-<h2 class="text-center"> Track cards across the globe</h2>
-<p class="sm:text-center">Follow postcards sent to a specific address and discover interesting relationships. Across time and space.</p>
- <div class="w-56 h-56 rounded-full overflow-hidden relative">
- <Picture host="groundedsage" imgName="map" alt="World map with pins and string between the pins connecting places" c="object-cover w-56 h-56"/>
- <!--<img  src="map.jpg" alt="" class="object-cover w-56 h-56"> -->
- <div class="w-full h-full absolute top-0 w-56 h-56 rounded-full inside-shadow"></div>
- </div>
+    <h2 class="text-center"> Track cards across the globe</h2>
+    <p class="sm:text-center">Follow postcards sent to a specific address and discover interesting relationships across time and space.</p>
+    <div class="w-56 h-56 rounded-full overflow-hidden relative">
+        <Picture host="EphemeraSearch" imgName="map.webp" alt="World map with pins and string between the pins connecting places" c="object-cover w-56 h-56"/>
+        <!--<img  src="https://res.cloudinary.com/ephemerasearch/image/upload/v1575995935/landing-page/map_vydr8n.webp" alt="" class="object-cover w-56 h-56"> -->
+        <!-- https://dynaimage.cdn.cnn.com/cnn/digital-images/org/4c7a7016-3a62-4bad-b308-e90a845965f1.png -->
+        <div class="w-full h-full absolute top-0 w-56 h-56 rounded-full inside-shadow"></div>
+    </div>
 </section>
 
 <section class="stack-small flex flex-col items-center">
@@ -136,28 +137,26 @@ import Picture from '../components/Picture.svelte';
 	</section>
 
 	<section>
-			<h3>Help with the Hard Stuff</h3>
-			<p>When it comes to decyphering old and faded handwriting. Humans are way better than machines. Every bit of help makes more discoveries possible.</p>
+			<h3>Become a contributor</h3>
+			<p>When it comes to decyphering old and faded handwriting, humans are better than machines. Every bit of help makes more discoveries possible.</p>
 	</section>
 	</div>
 </section>
 
 <section class="w-60ch mx-auto">
-	<h2 class="text-center">Sign up for our early Beta</h2>
+	<h2 class="text-center">Get access to our early beta</h2>
 	<form class="stack-small flex flex-col" name="contact" method="post" netlify="true" netlify-honeypot="bot-field">
 		<input type="hidden" name="form-name" value="contact">
 		<label for="name" >
 			<div class="flex justify-between">Name: <span class="text-red-800">* required</span></div>
 			<input class="pl-4 py-2 w-full" type="text" name="name" placeholder="Susan Smith">
 		</label>
-		
-	
+
 		<label for="email" >
 			<div class="flex justify-between">Email: <span class="text-red-800">* required</span></div>
 			<input class="pl-4 py-2 w-full" type="email" name="email" placeholder="susan@historian.com">
 		</label>
-		
 
-		<button class="border-none w-1/2 h-12  hover:underline cursor-pointer hover:bg-gray-900 self-center bg-black text-white" type="submit">Sign me up!</button>
+		<button class="border-none w-1/2 h-12  hover:underline cursor-pointer hover:bg-gray-900 self-center bg-black text-white" type="submit">Sign up</button>
 	</form>
 </section>
